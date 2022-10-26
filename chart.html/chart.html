@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	
+	title:{
+		text:"Skills"
+	},
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+		title: "Skills"
+	},
+	data: [{
+		type: "bar",
+		name: "companies",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
+			{ y: 3, label: "logic" },
+			{ y: 7, label: "critical thinking" },
+			{ y: 5, label: "team-player" },
+			{ y: 9, label: "kind" },
+			{ y: 7, label: "initiative" }
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

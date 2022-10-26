@@ -1,0 +1,19 @@
+.nav-wrapper {
+    color: pink;
+    padding: blue;
+    background: white;
+}
+
+body{
+    background: rgb(73, 64, 64);
+}
+
+.main-card{
+    background-color: black;
+}
+
+
+
+.img {
+    size: 100px;
+}
