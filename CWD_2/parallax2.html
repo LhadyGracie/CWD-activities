@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>parallax</title>
+</head>
+<body>
+  <div class="parallax-container">
+    <div class="parallax">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Flower_11.jpg" alt="">
+    </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+        <h2 class="header grey-text"> Parallax example</h2>
+        <a class="btn purple waves-effect waves-light" onclick="M.toast({html: 'Creative Web Design',
+    inDuration:1000,
+    completeCallback: function() {
+        alert('Your toast is dismissed');
+    },
+    classes: 'rounded'
+})">Toast</a>
+<a class="btn tooltipped pink" data-position="bottom" data-tooltip="">hover me</a>
+        <p>Landing a job nowadays is easier to have one because there are lots of opportunities to work remotely or work from home or being a virtual assistant. It is becoming a trend that offers higher salary and flexibility for those who seek to work with employers outside their country that offers much higher salary. 
+            But importantly, salary is a basic need for everyone but the quality of service of becoming a virtual assistant or being a developer is a must to have. In order to be one, is to enhance my knowledge and skills in different platforms and CMS. 
+            </p>
+    </div>
+  </div>
+
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+ <script>
+  $(document).ready(function(){
+    $('.parallax').parallax({
+        responsiveThreshold: 0
+    });
+    //init tooltip
+    $('.tooltipped').tooltip({
+        exitDelay: 1000
+    });
+  });
+        
+ </script>
+
+</body>
+</html>
